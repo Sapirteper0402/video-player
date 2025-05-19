@@ -1,0 +1,44 @@
+/* video-player */
+html {
+  background-color: #f4f1f6;
+}
+
+.video-player {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #9a46d4;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+}
+
+.video-erea {
+  background-color: #727171;
+  width: 50%;
+  border-radius: 6px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 360px;
+}
+
+.video-erea video {
+  width: 85%;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.editor {
+  position: relative;
+  width: 80%;
+  height: 110px;
+  margin-top: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 360px;
+  background-color: #727171;
+}

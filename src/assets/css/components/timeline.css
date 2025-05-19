@@ -1,0 +1,44 @@
+/* Timeline */
+
+.timeline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* z-index: 1; */
+}
+
+.thumbnail-strip {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  padding-block: 30px;
+  /* background-color: #727171; */
+
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thumbnail-strip img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  flex: 1;
+}
+
+.playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: white;
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+
+
+
