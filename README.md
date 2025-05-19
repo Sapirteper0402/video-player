@@ -19,7 +19,3 @@ A simple and intuitive web-based video player that allows users to select a spec
 
 <img width="945" alt="video-player-page" src="https://github.com/user-attachments/assets/a926bd3b-9ca0-4408-ac9d-c74655fb84ae" />
 
-
-## Deployment
-
-The Link: [VideoPlayer Project](https://sapirteper0402.github.io/video-player/) 
