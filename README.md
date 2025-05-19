@@ -1,12 +1,25 @@
-# React + Vite
+# Video Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and intuitive web-based video player that allows users to select a specific time range within a video using draggable trim handles. Designed for precise control and easy previewing of video segments.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Load and play local video files
+- Interactive timeline with draggable start and end handles
+- Real-time display of trim times as tooltips
+- Playhead resets to the beginning after trimming
+  
+## Technology Stack
 
-## Expanding the ESLint configuration
+- **React** – UI components and state management
+- **JavaScript** – Core logic and DOM interaction
+- **CSS** – Custom styles and layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshot
+
+<img width="945" alt="video-player-page" src="https://github.com/user-attachments/assets/a926bd3b-9ca0-4408-ac9d-c74655fb84ae" />
+
+
+## Deployment
+
+The Link: [VideoPlayer Project](https://sapirteper0402.github.io/video-player/) 
