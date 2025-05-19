@@ -8,12 +8,14 @@ export function Timeline({ currentTime, duration, thumbnails, onClickTimeline })
         const clickX = ev.clientX - rect.left
         const percentage = clickX / rect.width
         const time = percentage * duration
+        console.log('time', time);
+        
         onClickTimeline(time)
     }
     
     return (
-        <div className="timeline" onClick={onClick}>
-            <div className="thumbnail-strip">
+        <div className="timeline">
+            <div className="thumbnail-strip" onClick={onClick}>
                 {thumbnails.map((src, idx) => (
                     <img key={idx} src={src} alt={`thumb-${idx}`} />
                 ))}
