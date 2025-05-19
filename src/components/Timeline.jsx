@@ -8,8 +8,6 @@ export function Timeline({ currentTime, duration, thumbnails, onClickTimeline })
         const clickX = ev.clientX - rect.left
         const percentage = clickX / rect.width
         const time = percentage * duration
-        console.log('time', time);
-        
         onClickTimeline(time)
     }
     

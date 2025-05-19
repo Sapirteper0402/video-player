@@ -23,10 +23,8 @@ export function VideoPlayer() {
     // Updates current time and ensures playback stays within the trim range
     function handleTimeUpdate() {
         const time = videoRef.current.currentTime
-        console.log(videoRef.current.currentTime)
         setCurrentTime(time)
         
-
         if (time > end) {
             videoRef.current.pause()
             videoRef.current.currentTime = start
@@ -38,15 +36,10 @@ export function VideoPlayer() {
     
     // change the video to the clicked time on the timeline
     function onClickTimeline(time) {
-        console.log('onClickTimeline time', time);
-        videoRef.current.currentTime = time
-        setCurrentTime(time)
-        console.log('onClickTimeline .currentTime', videoRef.current.currentTime);
-
-        // if (videoRef.current) {
-        //     videoRef.current.currentTime = time
-        //     setCurrentTime(time)
-        // }
+        if (videoRef.current) {
+            videoRef.current.currentTime = time
+            setCurrentTime(time)
+        }
     }
 
     // Handles video metadata load and generates thumbnails
@@ -60,9 +53,10 @@ export function VideoPlayer() {
         setThumbnails(thumbs)
         setIsGeneratingThumbnails(false)
 
-        // // Reset currentTime to start after loading and generating thumbnails
-        // videoRef.current.currentTime = start
-        // setCurrentTime(start)
+        // Reset currentTime to start after loading and generating thumbnails
+        videoRef.current.currentTime = start
+        setCurrentTime(start)
+        
     }
 
     // Generates evenly spaced thumbnails from the video
