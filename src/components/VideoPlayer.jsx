@@ -60,9 +60,9 @@ export function VideoPlayer() {
         setThumbnails(thumbs)
         setIsGeneratingThumbnails(false)
 
-        // Reset currentTime to start after loading and generating thumbnails
-        videoRef.current.currentTime = start
-        setCurrentTime(start)
+        // // Reset currentTime to start after loading and generating thumbnails
+        // videoRef.current.currentTime = start
+        // setCurrentTime(start)
     }
 
     // Generates evenly spaced thumbnails from the video
