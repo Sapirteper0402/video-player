@@ -13,11 +13,11 @@ export function VideoPlayer() {
     const [end, setEnd] = useState(duration)
 
     //new start time when the start state changes
-    useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.currentTime = start
-        }
-    }, [start])
+    // useEffect(() => {
+    //     if (videoRef.current) {
+    //         videoRef.current.currentTime = start
+    //     }
+    // }, [start])
     
 
     // Updates current time and ensures playback stays within the trim range
