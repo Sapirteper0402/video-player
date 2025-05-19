@@ -38,10 +38,15 @@ export function VideoPlayer() {
     
     // change the video to the clicked time on the timeline
     function onClickTimeline(time) {
-        if (videoRef.current) {
-            videoRef.current.currentTime = time
-            setCurrentTime(time)
-        }
+        console.log('onClickTimeline time', time);
+        videoRef.current.currentTime = time
+        setCurrentTime(time)
+        console.log('onClickTimeline .currentTime', videoRef.current.currentTime);
+
+        // if (videoRef.current) {
+        //     videoRef.current.currentTime = time
+        //     setCurrentTime(time)
+        // }
     }
 
     // Handles video metadata load and generates thumbnails
