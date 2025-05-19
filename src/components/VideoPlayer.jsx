@@ -23,7 +23,9 @@ export function VideoPlayer() {
     // Updates current time and ensures playback stays within the trim range
     function handleTimeUpdate() {
         const time = videoRef.current.currentTime
+        console.log(videoRef.current.currentTime)
         setCurrentTime(time)
+        
 
         if (time > end) {
             videoRef.current.pause()
@@ -87,7 +89,7 @@ export function VideoPlayer() {
         <div className="video-player">
             <h1>CyberSheli Assignment - Video Player</h1>
             <section className="video-erea">
-                <video ref={videoRef} src="/assets/coverr-video-beach.mp4" style={{ visibility: isGeneratingThumbnails ? "hidden" : "visible" }} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} controls/>
+                <video ref={videoRef} src="/coverr-video-beach.mp4" style={{ visibility: isGeneratingThumbnails ? "hidden" : "visible" }} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} controls/>
             </section>
             { !isGeneratingThumbnails &&  <section className="editor">
                 <Timeline currentTime={currentTime} duration={duration} thumbnails={thumbnails} onClickTimeline={onClickTimeline} />
